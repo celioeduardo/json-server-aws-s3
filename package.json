@@ -1,0 +1,21 @@
+{
+  "name": "json-server-custom",
+  "version": "0.0.1",
+  "description": "json-server with AWS S3 support, upload file to db, endpoint for restart and changing source in runtime",
+  "author": "Célio Eduardo <hdr_celio@hotmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1022.0",
+    "multer": "^1.4.3",
+    "server-destroy": "^1.0.1",
+    "uuid": "^8.3.2"
+  }
+}
