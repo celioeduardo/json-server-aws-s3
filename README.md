@@ -28,6 +28,13 @@ $ curl -H "Content-Type: application/json" -X PUT --data-binary '@db.json' http:
 $ curl -X POST localhost:5000/json-server/restart
 ```
 
+## AWS Credentials
+There are several ways in Node.js to supply your credentials to the SDK.
+
+See https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html
+
+For running this JSON Server as a Kubernetes Pod in AWS EKS it's highly recommended using **IAM roles for service accounts**. See https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html
+
 ## JSON Server as module 
 
 ```bash
